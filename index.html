@@ -547,7 +547,7 @@ const heroObs=new IntersectionObserver(es=>{es.forEach(e=>{
       const suffix=el.querySelector('span')?.textContent||'';
       const span=el.querySelector('span');
       animateCount(el,target,'');
-      setTimeout(()=>{el.innerHTML=target.toLocaleString()+'<span>'+suffix+'</span>'},1900);
+      setTimeout(()=>{el.textContent=target.toLocaleString();const s=document.createElement('span');s.textContent=suffix;el.appendChild(s)},1900);
     });
   }
 })},{threshold:.3});
