@@ -337,11 +337,11 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
 .marquee-track{display:flex;gap:0;white-space:nowrap;animation:marqueeScroll 30s linear infinite;width:max-content}
 .marquee-item{font-family:var(--display);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:600;padding:0 20px}
 .marquee-dot{width:4px;height:4px;border-radius:50%;background:var(--blue);opacity:.25;flex-shrink:0;align-self:center}
-@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-33.33%)}}
 
 /* ===== FAQ ACCORDION ===== */
-.faq-section{padding:0 48px 140px}
-.faq-grid{max-width:800px;display:flex;flex-direction:column;gap:8px}
+.faq-section{padding:140px 48px}
+.faq-grid{max-width:800px;margin:48px auto 0;display:flex;flex-direction:column;gap:8px}
 .faq-item{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .3s}
 .faq-item.active{border-color:rgba(67,97,238,.15)}
 .faq-q{width:100%;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;background:none;border:none;font-family:var(--body);font-size:.86rem;font-weight:400;color:var(--fg);text-align:left;transition:color .3s;gap:16px}
@@ -485,7 +485,7 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
   .cta-btns{flex-direction:column;gap:8px}
   .cta-btns .hero-btn-fill,.cta-btns .hero-btn-line{text-align:center}
   .tuition-section{padding:80px 20px}.tui-grid{grid-template-columns:1fr;gap:12px}
-  .faq-section{padding:0 20px 80px}.faq-grid{max-width:100%}
+  .faq-section{padding:80px 20px}.faq-grid{max-width:100%}
   .facility-section{padding:0 20px 80px}.facility-grid{grid-template-columns:1fr;gap:12px}
   .info-section{padding:80px 20px}.info-layout{grid-template-columns:1fr;gap:28px}
   .consult-btn{margin-left:0;margin-top:8px;display:inline-flex}
@@ -1096,34 +1096,27 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
 <!-- ======== MARQUEE STRIP ======== -->
 <div class="marquee-strip rv">
   <div class="marquee-track">
-    <span class="marquee-item">소수 정원 맞춤 관리</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">오답노트 시스템</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">월별 학부모 리포트</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">97% 목표 대학 합격률</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">킬러 문항 집중 훈련</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">자습실 상시 개방</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">무료 레벨테스트</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">소수 정원 맞춤 관리</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">오답노트 시스템</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">월별 학부모 리포트</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">97% 목표 대학 합격률</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">킬러 문항 집중 훈련</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">자습실 상시 개방</span>
-    <span class="marquee-dot"></span>
-    <span class="marquee-item">무료 레벨테스트</span>
-    <span class="marquee-dot"></span>
+    <span class="marquee-item">소수 정원 맞춤 관리</span><span class="marquee-dot"></span>
+    <span class="marquee-item">오답노트 시스템</span><span class="marquee-dot"></span>
+    <span class="marquee-item">월별 학부모 리포트</span><span class="marquee-dot"></span>
+    <span class="marquee-item">97% 목표 대학 합격률</span><span class="marquee-dot"></span>
+    <span class="marquee-item">킬러 문항 집중 훈련</span><span class="marquee-dot"></span>
+    <span class="marquee-item">자습실 상시 개방</span><span class="marquee-dot"></span>
+    <span class="marquee-item">무료 레벨테스트</span><span class="marquee-dot"></span>
+    <span class="marquee-item">소수 정원 맞춤 관리</span><span class="marquee-dot"></span>
+    <span class="marquee-item">오답노트 시스템</span><span class="marquee-dot"></span>
+    <span class="marquee-item">월별 학부모 리포트</span><span class="marquee-dot"></span>
+    <span class="marquee-item">97% 목표 대학 합격률</span><span class="marquee-dot"></span>
+    <span class="marquee-item">킬러 문항 집중 훈련</span><span class="marquee-dot"></span>
+    <span class="marquee-item">자습실 상시 개방</span><span class="marquee-dot"></span>
+    <span class="marquee-item">무료 레벨테스트</span><span class="marquee-dot"></span>
+    <span class="marquee-item">소수 정원 맞춤 관리</span><span class="marquee-dot"></span>
+    <span class="marquee-item">오답노트 시스템</span><span class="marquee-dot"></span>
+    <span class="marquee-item">월별 학부모 리포트</span><span class="marquee-dot"></span>
+    <span class="marquee-item">97% 목표 대학 합격률</span><span class="marquee-dot"></span>
+    <span class="marquee-item">킬러 문항 집중 훈련</span><span class="marquee-dot"></span>
+    <span class="marquee-item">자습실 상시 개방</span><span class="marquee-dot"></span>
+    <span class="marquee-item">무료 레벨테스트</span><span class="marquee-dot"></span>
   </div>
 </div>
 
