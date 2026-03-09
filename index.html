@@ -264,7 +264,8 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
 .inst-overlay-bio{font-size:.74rem;color:rgba(255,255,255,.6);line-height:2;font-weight:300;margin-bottom:16px}
 .inst-overlay-certs{display:flex;flex-wrap:wrap;gap:6px}
 .inst-overlay-cert{font-size:.46rem;color:rgba(255,255,255,.4);padding:4px 10px;border:1px solid rgba(255,255,255,.08);border-radius:20px;font-weight:400;white-space:nowrap}
-.inst-overlay-close{font-family:var(--display);font-size:.42rem;color:rgba(255,255,255,.2);letter-spacing:.25em;text-transform:uppercase;margin-top:14px}
+.inst-overlay-close{font-family:var(--display);font-size:.48rem;color:rgba(255,255,255,.4);letter-spacing:.2em;text-transform:uppercase;margin-top:14px;padding:8px 16px;border:1px solid rgba(255,255,255,.1);border-radius:20px;display:inline-block;transition:all .3s}
+.inst-overlay-close:hover{border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.6)}
 .inst-info{padding:24px 28px}
 .inst-info h3{font-family:var(--body);font-size:1rem;font-weight:400;margin-bottom:4px}
 .inst-role-tag{font-size:.5rem;color:var(--blue);letter-spacing:.15em;text-transform:uppercase;font-weight:500;margin-bottom:12px}
@@ -303,11 +304,13 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
 .cta-banner .sec-label{color:rgba(67,97,238,.7)}
 .cta-banner .sec-label::before{background:rgba(67,97,238,.5)}
 .cta-title{font-family:var(--body);font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:200;color:rgba(255,255,255,.9);line-height:1.6;margin-bottom:16px}
-.cta-desc{font-size:.78rem;color:rgba(255,255,255,.35);line-height:2.2;font-weight:300;margin-bottom:36px}
+.cta-desc{font-size:.78rem;color:rgba(255,255,255,.55);line-height:2.2;font-weight:300;margin-bottom:36px}
 .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-banner .hero-btn-line{border-color:rgba(255,255,255,.25);color:rgba(255,255,255,.8)}
+.cta-banner .hero-btn-line:hover{border-color:var(--blue);color:var(--white);background:rgba(67,97,238,.15)}
 
 /* ===== TUITION / PRICING ===== */
-.tuition-section{padding:0 48px 140px}
+.tuition-section{padding:140px 48px}
 .tui-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .tui-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:40px 28px;text-align:center;position:relative;overflow:hidden;transition:all .5s cubic-bezier(.16,1,.3,1)}
 .tui-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(27,31,59,.08);border-color:rgba(67,97,238,.12)}
@@ -456,7 +459,7 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
 @media(max-width:768px){
   br{display:none}
   html,body,a,button{cursor:auto}.cur,.cur-ring,.cur-text{display:none}
-  nav{padding:14px 20px}.nav-right .nav-link{display:none}.hbg{display:flex}
+  nav{padding:14px 20px}.nav-right .nav-link{display:none}.nav-right .nav-cta{display:none}.hbg{display:flex}
   nav.scrolled{padding:12px 20px}
   .hero-deco{display:none}
   .hero{padding:100px 20px 60px;min-height:100vh}
@@ -481,7 +484,7 @@ nav.scrolled{padding:14px 48px;background:rgba(247,248,252,.92);backdrop-filter:
   .cta-banner{padding:60px 20px}
   .cta-btns{flex-direction:column;gap:8px}
   .cta-btns .hero-btn-fill,.cta-btns .hero-btn-line{text-align:center}
-  .tuition-section{padding:0 20px 80px}.tui-grid{grid-template-columns:1fr;gap:12px}
+  .tuition-section{padding:80px 20px}.tui-grid{grid-template-columns:1fr;gap:12px}
   .faq-section{padding:0 20px 80px}.faq-grid{max-width:100%}
   .facility-section{padding:0 20px 80px}.facility-grid{grid-template-columns:1fr;gap:12px}
   .info-section{padding:80px 20px}.info-layout{grid-template-columns:1fr;gap:28px}
